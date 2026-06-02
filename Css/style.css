@@ -1,0 +1,332 @@
+body{
+    background-color: #f5dfb6;
+    font-family: 'Bungee';
+}
+
+/* NAVBAR */
+.navbargeneral{
+    background-color: #212e12;
+    font-family: 'Bungee';
+    font-size: 13px;
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+.navbar-brand:hover{
+    color: #804d30;
+}
+
+.navbar-nav a{
+    color: aliceblue;
+}
+.navbar-nav a:hover{
+    color: #804d30;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* 1. Configuração da Imagem de Fundo (Fachada) */
+.hero-section {
+    /* Troque a URL abaixo pela sua imagem de acampamento */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imgs/pessoas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ocupa a tela inteira */
+    margin-top: 0; 
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59); 
+}
+
+
+/* 2. Menu Inicial (Transparente) */
+.navbarhome {
+    transition: all 0.4s ease; /* Animação suave */
+    background-color: transparent; /* Começa transparente */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Links brancos quando o fundo é transparente */
+.navbarhome .nav-link, 
+.navbarhome .navbar-brand {
+    color: #fff !important; 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Sombra para ler melhor */
+}
+
+.navbarhome .nav-link, 
+.navbarhome .navbar-brand:hover{
+    color: #804d30;
+} 
+
+/* 3. Menu "Scrollado" (Quando descer a página) */
+.navbar.scrolled {
+    background-color: #212e12; /* Fica branco */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+}
+
+/* Links escuros quando o fundo fica branco */
+.navbar.scrolled .nav-link, 
+.navbar.scrolled .navbar-brand {
+    color: aliceblue !important;
+    text-shadow: none;
+}
+
+.fa-ban{
+    color: #212e12;
+}
+
+.sobrehome{
+    list-style: none;
+    color: #212e12;
+}
+
+
+/* COUNTDOWN */
+
+/* Estilo base dos itens */
+.countdown-item {
+    background-color: #7a736a; /* Cor cinza/marrom da imagem */
+    color: aliceblue;
+    border-radius: 12px;
+    width: 80px;  /* Tamanho fixo para mobile */
+    height: 90px;
+    transition: all 0.3s ease;
+}
+
+.countdown-number {
+    color: aliceblue;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.65rem;
+    opacity: 0.8;
+}
+
+/* Ajuste para telas maiores (Desktop) */
+@media (min-width: 768px) {
+    .countdown-item {
+        width: 110px;
+        height: 120px;
+    }
+    .countdown-number {
+        font-size: 2.5rem;
+    }
+    .countdown-label {
+        font-size: 0.85rem;
+    }
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #804d30;
+    font-family: 'Bungee';
+    font-size: 13px;
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59); 
+}
+
+.footer .f-text{
+    color: aliceblue;
+}
+
+.f-text .contatotexto:hover{
+    color: #cc0202;
+}
+
+.footer .fa-whatsapp{
+    font-size: large;
+    font-weight: 100;
+    align-items: center;
+}
+
+.footer .fa-whatsapp:hover{
+    color: #01b62c;
+}
+
+.footer .fa-phone{
+    font-size: large;
+    align-items: center;
+}
+
+.footer .fa-phone:hover{
+    color: #cc0202;
+}
+
+.footer button:hover{
+    color: #cc0202;
+}
+
+.fa-bars{
+    color: aliceblue;
+    padding-right: 10px;
+}
+
+.maps{
+    border-radius: 2%;
+    border: 0;
+    width: 500;
+    height: 600;
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59); 
+}
+
+.carousel-inner{
+    border-radius: 5%;
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+}
+
+.carousel{
+    padding-left: 10;
+}
+
+.fotocontato-s{
+    border-radius: 50%;
+    width: 10;
+    height: 10;
+}
+
+.numerocontato-s:hover{
+    color: blue;
+}
+
+.fotocontato-g{
+    border-radius: 50%;
+    width: 10;
+    height: 10;
+}
+
+.numerocontato-g:hover{
+    color: blue;
+}
+
+.btn-color{
+    color: black;
+}
+
+.btn-color:hover{
+    color: #804d30;
+}
+
+.nav-pills .nav-link.btn-color.active {
+    background-color: #212e12 !important; /* Ex: #d9534f */
+    border-color: #212e12 !important;
+    color: aliceblue !important; /* Cor do texto (branco) */
+}
+
+
+
+.lista{
+    list-style: none;
+}
+
+.embreve{
+    width: 250px;
+    height: 250px;
+}
+
+.card{
+
+    box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-webkit-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: -3px 0px 17px 2px rgba(0,0,0,0.59);
+}
+
+.galeria{
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+/*.produtos .big-title{
+    color: #e8e8e8;
+    }*/
+
+.galeria .big-title::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    display: block;
+    background-color: #212529;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /*margin-left: 50px;*/
+    margin-top: 30px;
+}
+
+.galeria .box-3{
+    padding: 10px;
+    background-color: #212e12;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 4px;
+    transition: all .15s ease-in-out;
+}
+
+.galeria .box-3:hover{
+    transform: scale(1.1);
+}
+
+
+.galeria .box-3 img{
+    width: 100%;
+}
+
+
+.galeria .fotos:target{
+    position: fixed;
+    top: 20px;
+    right: 25%;
+    width: 50%; /* Tamanho da foto ampliada */
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    z-index: 10;
+    cursor: default; /* Remove o ícone de mãozinha do mouse */
+
+}
+
+/* A cortina fica escondida normalmente */
+.fechar-backdrop {
+    display: none;
+}
+
+/* Quando a foto é o alvo (:target), a cortina aparece */
+.fotos:target .fechar-backdrop{
+    display: block;
+    position: fixed; /* Fixa na tela toda */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5; /* Fica atrás da imagem, mas na frente do resto do site */
+    cursor: default; /* Remove o ícone de mãozinha do mouse */
+}
